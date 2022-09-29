@@ -309,12 +309,6 @@ a {
     background-color: var(--footer-bgc);
 }
 
-@media screen and (max-width: 480px) {
-    .footer-page {
-        background-color: var(--footer-bgc);
-    }    
-}
-
 .footer-page__container {
     display: flex;
     flex-direction: column;
@@ -361,7 +355,7 @@ a {
 }
 
 .subscribe-form__lable {
-    max-width   : 450px; 
+    max-width: 450px;
 }
 
 .subscribe-form__input {
