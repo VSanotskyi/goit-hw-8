@@ -1,0 +1,30 @@
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .contacts-link {
+        display: flex;
+        flex-direction: column;
+    
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        .contacts-link--white {
+            color: var(--accent-white);
+        }
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-blue);
+        }
+    
+        &:hover .contacts-link--white,
+        &:focus .contacts-link--white {
+            color: var(--accent-blue);
+        }
+    }
+}
