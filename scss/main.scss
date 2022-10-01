@@ -253,15 +253,15 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
 
-        width: 450px;
+        max-width: 450px;
         max-height: 609px;
         padding: 40px;
 
         background-color: var(--accent-white);
 
-        @media screen and (max-width: 450px) {
-            width: auto;
-        }
+        // @media screen and (max-width: 450px) {
+        //     width: auto;
+        // }
     }
 
     .modal__btn {
@@ -286,12 +286,12 @@ body {
             color: var(--accent-blue);
         }
 
-        &:hover .modal__icon,
-        &:focus .modal__icon {
+        .modal__icon {
             fill: currentColor;
         }
     }
 }
+
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
