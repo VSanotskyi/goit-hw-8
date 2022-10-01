@@ -109,16 +109,19 @@ body {
 }
 
 // features
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .features-list__box {
     display: flex;
     justify-content: center;
     padding: 25px 0;
+    margin-bottom: 30px;
 
     background-color: var(--secondary-bgc);
-
-    &--margin-bottom {
-        margin-bottom: 30px;
-    }
 }
 
 .feature-list__title {
@@ -245,7 +248,7 @@ body {
 
     .modal {
         position: absolute;
-        
+
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
