@@ -253,11 +253,15 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
 
-        max-width: 450px;
+        width: 450px;
         max-height: 609px;
         padding: 40px;
 
         background-color: var(--accent-white);
+
+        @media screen and (max-width: 450px) {
+            width: auto;
+        }
     }
 
     .modal__btn {

@@ -398,15 +398,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
-  padding-left: 13px;
+  gap: 8px;
   margin-bottom: 30px;
 }
 
 .form-policy__text {
   color: var(--secondary-cl);
-  font-size: 14px;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
 }
 
@@ -659,10 +659,15 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 450px;
+  width: 450px;
   max-height: 609px;
   padding: 40px;
   background-color: var(--accent-white);
+}
+@media screen and (max-width: 449px) {
+  .backdrop .modal {
+    width: auto;
+  }
 }
 .backdrop .modal__btn {
   position: absolute;
