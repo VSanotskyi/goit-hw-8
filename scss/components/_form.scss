@@ -2,14 +2,33 @@
 .subscribe-form {
     text-align: center;
 
+    @media screen and (min-width: 769px) {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+
     .subscribe-form__label {
         display: block;
         max-width: 450px;
 
-        &--margin {
-            margin-bottom: 20px;
+        @media screen and (min-width: 481px) {
+            width: 450px;
         }
+
+        @media screen and (min-width: 769px) {
+            width: 358px;
+        }
+
     }
+
+    .subscribe-form__label--margin {
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 769px) {
+            margin-bottom: 0;
+        }
+    } 
 
     .subscribe-form__input {
         width: 100%;

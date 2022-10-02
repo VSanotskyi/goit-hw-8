@@ -1,6 +1,7 @@
 .logo {
     display: block;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     font-family: var(--secondary-font);
     color: var(--accent-blue);
@@ -13,14 +14,25 @@
         color: var(--primary-cl);
     }
 
-    &--down {
-        padding: 0;
-        margin-bottom: 20px;
+    @media screen and (min-width: 481px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        margin-right: 87px;
+    }
 
-        text-align: center;
+    &--down {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
 
         .logo--color-white {
             color: var(--accent-white);
+        }
+
+        @media screen and (min-width: 769px) {
+            justify-content: start;
         }
     }
 }

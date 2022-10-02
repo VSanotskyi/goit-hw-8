@@ -25,9 +25,11 @@
                     <a class="link logo" href="#"
                         >Web<span class="logo--color-black">Studio</span></a
                     >
-                    <!-- <ul class="list nav__list">
+                    <ul class="list nav__list nav__list-top">
                         <li class="nav__item">
-                            <a class="link nav__link nav__link--active" href="#">Студія</a>
+                            <a class="link nav__link nav__link--active" href="./index.html"
+                                >Студія</a
+                            >
                         </li>
                         <li class="nav__item">
                             <a class="link nav__link" href="./portfolio.html">Портфоліо</a>
@@ -35,27 +37,30 @@
                         <li class="nav__item">
                             <a class="link nav__link" href="#">Контакти</a>
                         </li>
-                    </ul> -->
+                    </ul>
                 </nav>
 
-                <!-- <ul class="list contacts-list">
-                    <li class="contacts-list__item">
-                        <a class="link contacts-list__link" href="mail:info@devstudio.com">
-                            <svg class="contacts-list__icon" width="16" height="12">
+                <ul class="list contacts-list contacts-list--top">
+                    <li class="contacts-item">
+                        <a
+                            class="link contacts-link contacts-link--top"
+                            href="mail:info@devstudio.com"
+                        >
+                            <svg class="contacts-icon" width="16" height="12">
                                 <use href="./img/svg/symbol-defs.svg#mail"></use>
                             </svg>
                             info@devstudio.com</a
                         >
                     </li>
-                    <li class="contacts-list__item">
-                        <a class="link contacts-list__link" href="tel:+380961111111">
-                            <svg class="contacts-list__icon" width="10" height="16">
+                    <li class="contacts-item">
+                        <a class="link contacts-link contacts-link--top" href="tel:+380961111111">
+                            <svg class="contacts-icon" width="10" height="16">
                                 <use href="./img/svg/symbol-defs.svg#phone"></use>
                             </svg>
                             +38 096 111 11 11</a
                         >
                     </li>
-                </ul> -->
+                </ul>
                 <button
                     class="menu__btn js-open-menu"
                     type="button"
@@ -145,7 +150,7 @@
             </section>
 
             <!-- work -->
-            <section class="section--padding section--hidden">
+            <section class="section--padding section--padding-top section--hidden">
                 <div class="container">
                     <h2 class="section__title section__title--margin-bottom">Чим ми займаємося</h2>
 
@@ -194,6 +199,10 @@
                             <img
                                 class="img"
                                 srcset="
+                                    ./img/team/img1-team-laptop@1x.png 270w,
+                                    ./img/team/img1-team-laptop@2x.png 540w,
+                                    ./img/team/img1-team-tablet@1x.png 354w,
+                                    ./img/team/img1-team-tablet@2x.png 708w,
                                     ./img/team/img1_team-mobile@1x.jpg 450w,
                                     ./img/team/img1_team-mobile@2x.png 900w
                                 "
@@ -268,6 +277,10 @@
                             <img
                                 class="img"
                                 srcset="
+                                    ./img/team/img2-team-laptop@1x.png 270w,
+                                    ./img/team/img2-team-laptop@2x.png 540w,
+                                    ./img/team/img2-team-tablet@1x.png 354w,
+                                    ./img/team/img2-team-tablet@2x.png 708w,
                                     ./img/team/img2_team-mobile@1x.jpg 450w,
                                     ./img/team/img2_team-mobile@2x.jpg 900w
                                 "
@@ -342,6 +355,10 @@
                             <img
                                 class="img"
                                 srcset="
+                                    ./img/team/img4-team-laptop@1x.png 270w,
+                                    ./img/team/img4-team-laptop@2x.png 540w,
+                                    ./img/team/img3-team-tablet@1x.png 354w,
+                                    ./img/team/img3-team-tablet@2x.png 708w,
                                     ./img/team/img3_team-mobile@2x.jpg 450w,
                                     ./img/team/img3_team-mobile@2x.jpg 900w
                                 "
@@ -414,6 +431,10 @@
                             <img
                                 class="img"
                                 srcset="
+                                    ./img/team/img4-team-laptop@1x.png 270w,
+                                    ./img/team/img4-team-laptop@2x.png 540w,
+                                    ./img/team/img4-team-tablet@1x.png 354w,
+                                    ./img/team/img4-team-tablet@2x.png 708w,
                                     ./img/team/img4_team-mobile@2x.jpg 450w,
                                     ./img/team/img4_team-mobile@2x.jpg 900w
                                 "
@@ -542,72 +563,86 @@
         <!-- footer -->
         <footer class="footer section--padding">
             <div class="container footer--flex">
-                <div class="address-container">
-                    <a class="link logo logo--down" href=""
-                        >Web<span class="logo--color-white">Studio</span></a
-                    >
-                    <address class="address">
-                        <ul class="list contacts-list contacts-list--down">
-                            <li class="contact-item">
+                <div class="footer--wrap">
+                    <div class="address-container">
+                        <a class="link logo logo--down" href=""
+                            >Web<span class="logo--color-white">Studio</span></a
+                        >
+                        <address class="address">
+                            <ul class="list contacts-list contacts-list--down">
+                                <li class="contact-item">
+                                    <a
+                                        class="link contacts-link contacts-link--down"
+                                        href="https://goo.gl/maps/xePR7skTmvDiXNse6"
+                                        ><span class="contacts-link--white"
+                                            >м. Київ, пр-т Лесі Українки, 26</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="contact-item">
+                                    <a
+                                        class="link contacts-link contacts-link--down"
+                                        href="mail:info@devstudio.com"
+                                        >info@devstudio.com</a
+                                    >
+                                </li>
+                                <li class="contact-item">
+                                    <a
+                                        class="link contacts-link contacts-link--down"
+                                        href="tel:+380961111111"
+                                        >+38 096 111 11 11</a
+                                    >
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+
+                    <div class="join-container">
+                        <p class="footer__title footer__title--margin">приєднуйтесь</p>
+
+                        <ul class="list social-list">
+                            <li class="social-list__item">
                                 <a
-                                    class="link contacts-link contacts-link--down"
-                                    href="https://goo.gl/maps/xePR7skTmvDiXNse6"
-                                    ><span class="contacts-link--white"
-                                        >м. Київ, пр-т Лесі Українки, 26</span
-                                    ></a
+                                    href=""
+                                    class="link social-list__link social-list__link--bgc-dark"
                                 >
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./img/svg/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="contact-item">
+                            <li class="social-list__item">
                                 <a
-                                    class="link contacts-link contacts-link--down"
-                                    href="mail:info@devstudio.com"
-                                    >info@devstudio.com</a
+                                    href=""
+                                    class="link social-list__link social-list__link--bgc-dark"
                                 >
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./img/svg/symbol-defs.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="contact-item">
+                            <li class="social-list__item">
                                 <a
-                                    class="link contacts-link contacts-link--down"
-                                    href="tel:+380961111111"
-                                    >+38 096 111 11 11</a
+                                    href=""
+                                    class="link social-list__link social-list__link--bgc-dark"
                                 >
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./img/svg/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a
+                                    href=""
+                                    class="link social-list__link social-list__link--bgc-dark"
+                                >
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./img/svg/symbol-defs.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
-                    </address>
-                </div>
-
-                <div class="join-container">
-                    <p class="footer__title footer__title--margin">приєднуйтесь</p>
-
-                    <ul class="list social-list">
-                        <li class="social-list__item">
-                            <a href="" class="link social-list__link social-list__link--bgc-dark">
-                                <svg class="social-list__icon" width="20" height="20">
-                                    <use href="./img/svg/symbol-defs.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="" class="link social-list__link social-list__link--bgc-dark">
-                                <svg class="social-list__icon" width="20" height="20">
-                                    <use href="./img/svg/symbol-defs.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="" class="link social-list__link social-list__link--bgc-dark">
-                                <svg class="social-list__icon" width="20" height="20">
-                                    <use href="./img/svg/symbol-defs.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="" class="link social-list__link social-list__link--bgc-dark">
-                                <svg class="social-list__icon" width="20" height="20">
-                                    <use href="./img/svg/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
 
                 <div class="subscribe-container">

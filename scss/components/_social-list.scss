@@ -9,13 +9,22 @@
         justify-content: center;
         width: 44px;
         height: 44px;
+        border-radius: 50%;
         outline: none;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         color: #afb1b8;
 
+        .social-list__link--bgc-dark {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
         &:hover,
         &:focus {
-            color: var(--accent-blue);
+            background-color: var(--accent-blue);
+            color: var(--accent-white);
         }
     }
 
@@ -23,4 +32,3 @@
         fill: currentColor;
     }
 }
-

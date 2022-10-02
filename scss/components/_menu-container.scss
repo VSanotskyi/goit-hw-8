@@ -11,6 +11,10 @@
 
     background-color: transparent;
 
+    @media screen and (min-width: 481px) {
+        display: none;
+    }
+
     &.menu-toggle {
         position: absolute;
         top: 10px;
@@ -43,25 +47,6 @@
 
     &.is-open {
         transform: translateX(0);
-    }
-}
-
-.nav__list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.nav__link {
-    color: var(--primary-cl);
-    font-weight: 500;
-    font-size: 40px;
-    line-height: calc(47 / 40);
-    letter-spacing: 0.02em;
-
-    &:hover,
-    &:focus {
-        color: var(--btn-active);
     }
 }
 
