@@ -980,6 +980,13 @@ a {
 }
 
 .footer--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 60px;
 }
 @media screen and (min-width: 481px) {
