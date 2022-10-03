@@ -484,7 +484,7 @@ a {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -1123,19 +1123,38 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.08);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop .modal {
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   max-width: 450px;
-  max-height: 609px;
   padding: 40px;
   background-color: var(--accent-white);
 }
-.backdrop .modal__btn {
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
+.modal__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -1155,17 +1174,17 @@ a {
   background-color: inherit;
   color: var(--primary-cl);
 }
-.backdrop .modal__btn:hover, .backdrop .modal__btn:focus {
+.modal__btn:hover, .modal__btn:focus {
   color: var(--accent-blue);
 }
-.backdrop .modal__btn .modal__icon {
-  fill: currentColor;
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  fill: currentColor;
 }
 
 .container {
