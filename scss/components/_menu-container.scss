@@ -11,7 +11,7 @@
 
     background-color: transparent;
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 
@@ -50,38 +50,7 @@
     }
 }
 
-.address__list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    margin-top: auto;
-    margin-bottom: 64px;
-}
 
-.address__link {
-    color: var(--secondary-cl);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px calc(28 / 24);
-    letter-spacing: 0.02em;
 
-    &:hover,
-    &:focus {
-        font-size: 34px;
-        line-height: calc(40 / 34);
 
-        color: var(--accent-blue);
-    }
-}
 
-.menu__social-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-
-    color: var(--accent-blue);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: calc(22 / 18);
-    letter-spacing: 0.02em;
-}

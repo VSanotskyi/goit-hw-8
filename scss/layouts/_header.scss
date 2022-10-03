@@ -1,0 +1,14 @@
+.header-page {
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.header-page__container--flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    @media screen and(min-width: 481px) {
+        display: flex;
+    }
+}

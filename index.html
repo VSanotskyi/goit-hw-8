@@ -158,30 +158,30 @@
                         <li class="work-list__item">
                             <img
                                 class="img"
-                                src="./img/work/work1.jpg"
+                                srcset="./img/work/img1-@1x.jpg 370w, ./img/work/img1-@2x.jpg 540w"
+                                sizes="(min-width: 1200px) 370px, 100vw"
+                                src=""
                                 alt="опис"
-                                width="370"
-                                height="294"
                             />
                             <h3 class="work-list__overlay">Десктопні додатки</h3>
                         </li>
                         <li class="work-list__item">
                             <img
                                 class="img"
-                                src="./img/work/work2.jpg"
+                                srcset="./img/work/img2-@1x.jpg 370w, ./img/work/img2-@2x.jpg 540w"
+                                sizes="(min-width: 1200px) 370px, 100vw"
+                                src=""
                                 alt="опис"
-                                width="370"
-                                height="294"
                             />
                             <h3 class="work-list__overlay">Мобільні додатки</h3>
                         </li>
                         <li class="work-list__item">
                             <img
                                 class="img"
-                                src="./img/work/work3.jpg"
+                                srcset="./img/work/img3-@1x.jpg 370w, ./img/work/img3-@2x.jpg 540w"
+                                sizes="(min-width: 1200px) 370px, 100vw"
+                                src=""
                                 alt="опис"
-                                width="370"
-                                height="294"
                             />
                             <h3 class="work-list__overlay">Дизайнерські рішення</h3>
                         </li>
@@ -194,29 +194,100 @@
                 <div class="container">
                     <h2 class="section__title section__title--margin-bottom">Наша команда</h2>
 
-                    <ul class="list team-list">
-                        <li class="team-list__item">
+                    <ul class="list team__list">
+                        <li class="team__item">
                             <img
                                 class="img"
                                 srcset="
-                                    ./img/team/img1-team-laptop@1x.png 270w,
-                                    ./img/team/img1-team-laptop@2x.png 540w,
-                                    ./img/team/img1-team-tablet@1x.png 354w,
-                                    ./img/team/img1-team-tablet@2x.png 708w,
-                                    ./img/team/img1_team-mobile@1x.jpg 450w,
-                                    ./img/team/img1_team-mobile@2x.png 900w
+                                    ./img/team/img1_laptop_@1x.jpg 270w,
+                                    ./img/team/img1_laptop_@2x.jpg 540w,
+                                    ./img/team/img1_tablet_@1x.jpg 354w,
+                                    ./img/team/img1_tablet_@2x.jpg 708w,
+                                    ./img/team/img1_mobile_@1x.jpg 450w,
+                                    ./img/team/img1_mobile_@2x.jpg 900w
                                 "
                                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                                src="./img/team/img1_team-mobile@1x.jpg"
+                                src=""
                                 alt="фото Ігора"
                             />
-                            <div class="team-list__box">
-                                <h3 class="team-list__title team-list__title--margin">
-                                    Ігор Дем'яненко
-                                </h3>
-                                <p class="team-list__text team-list__text--margin">
-                                    Product Designer
-                                </p>
+                            <div class="team__box">
+                                <h3 class="team__title team__title--margin">Ігор Дем'яненко</h3>
+                                <p class="team__text team__text--margin">Product Designer</p>
+
+                                <ul class="list social-list">
+                                    <li class="social-list__item">
+                                        <a
+                                            href=""
+                                            class="link social-list__link social-list__link--color-grey"
+                                        >
+                                            <svg class="social-list__icon" width="20" height="20">
+                                                <use
+                                                    href="./img/svg/symbol-defs.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a
+                                            href=""
+                                            class="link social-list__link social-list__link--color-grey"
+                                        >
+                                            <svg class="social-list__icon" width="20" height="20">
+                                                <use
+                                                    href="./img/svg/symbol-defs.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list__item work-social__item">
+                                        <a
+                                            href=""
+                                            class="link social-list__link social-list__link--color-grey"
+                                        >
+                                            <svg
+                                                class="social-list__icon work-social__icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./img/svg/symbol-defs.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a
+                                            href=""
+                                            class="link social-list__link social-list__link--color-grey"
+                                        >
+                                            <svg class="social-list__icon" width="20" height="20">
+                                                <use
+                                                    href="./img/svg/symbol-defs.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <img
+                                class="img"
+                                srcset="
+                                    ./img/team/img2_laptop_@1x.jpg 270w,
+                                    ./img/team/img2_laptop_@2x.jpg 540w,
+                                    ./img/team/img2_tablet_@1x.jpg 354w,
+                                    ./img/team/img2_tablet_@2x.jpg 708w,
+                                    ./img/team/img2_mobile_@1x.jpg 450w,
+                                    ./img/team/img2_mobile_@2x.jpg 900w
+                                "
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src=""
+                                alt="фото"
+                            />
+                            <div class="team__box">
+                                <h3 class="team__title team__title--margin">Ольга Рєпіна</h3>
+                                <p class="team__text team__text--margin">Frontend Developer</p>
                                 <ul class="list social-list">
                                     <li class="social-list__item">
                                         <a
@@ -277,24 +348,20 @@
                             <img
                                 class="img"
                                 srcset="
-                                    ./img/team/img2-team-laptop@1x.png 270w,
-                                    ./img/team/img2-team-laptop@2x.png 540w,
-                                    ./img/team/img2-team-tablet@1x.png 354w,
-                                    ./img/team/img2-team-tablet@2x.png 708w,
-                                    ./img/team/img2_team-mobile@1x.jpg 450w,
-                                    ./img/team/img2_team-mobile@2x.jpg 900w
+                                    ./img/team/img3_laptop_@1x.jpg 270w,
+                                    ./img/team/img3_laptop_@2x.jpg 540w,
+                                    ./img/team/img3_tablet_@1x.jpg 354w,
+                                    ./img/team/img3_tablet_@2x.jpg 708w,
+                                    ./img/team/img3_mobile_@1x.jpg 450w,
+                                    ./img/team/img3_mobile_@2x.jpg 900w
                                 "
                                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                                src="./img/team/img2_team-mobile@1x.jpg"
-                                alt="фото Ігора"
+                                src=""
+                                alt="фото"
                             />
-                            <div class="team-list__box">
-                                <h3 class="team-list__title team-list__title--margin">
-                                    Ольга Рєпіна
-                                </h3>
-                                <p class="team-list__text team-list__text--margin">
-                                    Frontend Developer
-                                </p>
+                            <div class="team__box">
+                                <h3 class="team__title team__title--margin">Frontend Developer</h3>
+                                <p class="team__text team__text--margin">Marketing</p>
                                 <ul class="list social-list">
                                     <li class="social-list__item">
                                         <a
@@ -355,98 +422,20 @@
                             <img
                                 class="img"
                                 srcset="
-                                    ./img/team/img4-team-laptop@1x.png 270w,
-                                    ./img/team/img4-team-laptop@2x.png 540w,
-                                    ./img/team/img3-team-tablet@1x.png 354w,
-                                    ./img/team/img3-team-tablet@2x.png 708w,
-                                    ./img/team/img3_team-mobile@2x.jpg 450w,
-                                    ./img/team/img3_team-mobile@2x.jpg 900w
+                                    ./img/team/img4_laptop_@1x.jpg 270w,
+                                    ./img/team/img4_laptop_@2x.jpg 540w,
+                                    ./img/team/img4_tablet_@1x.jpg 354w,
+                                    ./img/team/img4_tablet_@2x.jpg 708w,
+                                    ./img/team/img4_mobile_@1x.jpg 450w,
+                                    ./img/team/img4_mobile_@2x.jpg 900w
                                 "
                                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                                src="./img/team/img3_team-mobile@1x.jpg"
-                                alt="фото Ігора"
+                                src=""
+                                alt="фото"
                             />
-                            <div class="team-list__box">
-                                <h3 class="team-list__title team-list__title--margin">
-                                    Frontend Developer
-                                </h3>
-                                <p class="team-list__text team-list__text--margin">Marketing</p>
-                                <ul class="list social-list">
-                                    <li class="social-list__item">
-                                        <a
-                                            href=""
-                                            class="link social-list__link social-list__link--color-grey"
-                                        >
-                                            <svg class="social-list__icon" width="20" height="20">
-                                                <use
-                                                    href="./img/svg/symbol-defs.svg#icon-instagram"
-                                                ></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-list__item">
-                                        <a
-                                            href=""
-                                            class="link social-list__link social-list__link--color-grey"
-                                        >
-                                            <svg class="social-list__icon" width="20" height="20">
-                                                <use
-                                                    href="./img/svg/symbol-defs.svg#icon-facebook"
-                                                ></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-list__item work-social__item">
-                                        <a
-                                            href=""
-                                            class="link social-list__link social-list__link--color-grey"
-                                        >
-                                            <svg
-                                                class="social-list__icon work-social__icon"
-                                                width="20"
-                                                height="20"
-                                            >
-                                                <use
-                                                    href="./img/svg/symbol-defs.svg#icon-twitter"
-                                                ></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-list__item">
-                                        <a
-                                            href=""
-                                            class="link social-list__link social-list__link--color-grey"
-                                        >
-                                            <svg class="social-list__icon" width="20" height="20">
-                                                <use
-                                                    href="./img/svg/symbol-defs.svg#icon-linkedin"
-                                                ></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="team-list__item">
-                            <img
-                                class="img"
-                                srcset="
-                                    ./img/team/img4-team-laptop@1x.png 270w,
-                                    ./img/team/img4-team-laptop@2x.png 540w,
-                                    ./img/team/img4-team-tablet@1x.png 354w,
-                                    ./img/team/img4-team-tablet@2x.png 708w,
-                                    ./img/team/img4_team-mobile@2x.jpg 450w,
-                                    ./img/team/img4_team-mobile@2x.jpg 900w
-                                "
-                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                                src="./img/team/img4_team-mobile@1x.jpg"
-                                alt="фото Ігора"
-                            />
-                            <div class="team-list__box">
-                                <h3 class="team-list__title team-list__title--margin">
-                                    Михайло Єрмаков
-                                </h3>
-                                <p class="team-list__text team-list__text--margin">UI Designer</p>
+                            <div class="team__box">
+                                <h3 class="team__title team__title--margin">Михайло Єрмаков</h3>
+                                <p class="team__text team__text--margin">UI Designer</p>
                                 <ul class="list social-list">
                                     <li class="social-list__item">
                                         <a
@@ -561,7 +550,7 @@
         </main>
 
         <!-- footer -->
-        <footer class="footer section--padding">
+        <footer class="footer">
             <div class="container footer--flex">
                 <div class="footer--wrap">
                     <div class="address-container">
@@ -752,41 +741,43 @@
                 </svg>
             </button>
 
-            <ul class="list nav__list">
+            <ul class="list nav__list--menu">
                 <li>
-                    <a href="./index.html" class="link nav__link">Студія</a>
+                    <a href="./index.html" class="link nav__link--menu">Студія</a>
                 </li>
                 <li>
-                    <a href="./portfolio.html" class="link nav__link">Портфоліо</a>
+                    <a href="./portfolio.html" class="link nav__link--menu">Портфоліо</a>
                 </li>
                 <li>
-                    <a href="" class="link nav__link">Контакти</a>
+                    <a href="" class="link nav__link--menu">Контакти</a>
                 </li>
             </ul>
 
-            <ul class="list address__list">
+            <ul class="list contacts__list--menu">
                 <li>
-                    <a href="tel:+380961111111" class="link address__link">+38 096 111 11 11</a>
+                    <a href="tel:+380961111111" class="link contacts__link--menu"
+                        >+38 096 111 11 11</a
+                    >
                 </li>
                 <li>
-                    <a href="email:info@devstudio.com" class="link address__link"
+                    <a href="email:info@devstudio.com" class="link contacts__link--menu"
                         >info@devstudio.com</a
                     >
                 </li>
             </ul>
 
-            <ul class="list menu__social-list">
+            <ul class="list social__list--menu">
                 <li>
-                    <a href="" class="link menu__social-list">Instagram</a>
+                    <a href="" class="link social__link--menu">Instagram</a>
                 </li>
                 <li>
-                    <a href="" class="link menu__social-list">Twitter</a>
+                    <a href="" class="link social__link--menu">Twitter</a>
                 </li>
                 <li>
-                    <a href="" class="link menu__social-list">Facebook</a>
+                    <a href="" class="link social__link--menu">Facebook</a>
                 </li>
                 <li>
-                    <a href="" class="link menu__social-list">LinkedIn</a>
+                    <a href="" class="link social__link--menu">LinkedIn</a>
                 </li>
             </ul>
         </div>

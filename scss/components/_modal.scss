@@ -1,0 +1,61 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.08);
+
+    .modal {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        max-width: 450px;
+        max-height: 609px;
+        padding: 40px;
+
+        background-color: var(--accent-white);
+
+        // @media screen and (max-width: 450px) {
+        //     width: auto;
+        // }
+    }
+
+    .modal__btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        background-color: inherit;
+        color: var(--primary-cl);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-blue);
+        }
+
+        .modal__icon {
+            fill: currentColor;
+        }
+    }
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
