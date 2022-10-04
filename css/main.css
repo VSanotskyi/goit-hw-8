@@ -1147,7 +1147,7 @@ a {
 }
 
 .backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   overflow: scroll;
@@ -1186,7 +1186,6 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    position: fixed;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
