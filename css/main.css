@@ -257,7 +257,7 @@ a {
 .primary-btn:hover, .primary-btn:focus {
   background-color: var(--btn-active);
 }
-.primary-btn .primary-btn--gap {
+.primary-btn--gap {
   gap: 10px;
 }
 
